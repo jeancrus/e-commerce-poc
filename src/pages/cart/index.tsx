@@ -8,7 +8,7 @@ import {
 import { formatPrice } from 'util/format'
 import { IProductRequest } from 'services/productsApi'
 import Button from 'components/Button'
-import * as S from './styles'
+import * as S from 'components/CartPage'
 
 const Cart: React.FC = () => {
   const { state, updateStock, removeProduct } = useProvider()

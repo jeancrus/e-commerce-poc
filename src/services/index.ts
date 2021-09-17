@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://5d6da1df777f670014036125.mockapi.io/api/v1'
+  baseURL: process.env.NEXT_PUBLIC_API
 })
 
 export default api

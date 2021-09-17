@@ -5,7 +5,7 @@ import { useProvider } from 'provider'
 import { getProducts, IProductRequest } from 'services/productsApi'
 
 import ProductCard from 'components/ProductCard'
-import * as S from './styles'
+import * as S from 'components/MainPage'
 
 const Main: React.FC = () => {
   const { state, setState, addToCart } = useProvider()
