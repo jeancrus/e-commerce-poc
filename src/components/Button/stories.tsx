@@ -6,4 +6,12 @@ export default {
   component: Button
 } as Meta
 
-export const Default: Story<IButtonProps> = args => <Button {...args} />
+export const Default: Story<IButtonProps> = args => {
+  const { children } = args
+
+  return <Button {...args}>{children}</Button>
+}
+
+Default.args = {
+  children: 'Botão teste'
+}
