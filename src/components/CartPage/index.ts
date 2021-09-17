@@ -25,13 +25,10 @@ export const ProductTable = styled.table`
   tbody td {
     padding: 12px;
     border-bottom: 1px solid #eee;
+    position: relative;
   }
 
-  img {
-    height: 100px;
-  }
-
-  strong {
+  b {
     color: #333;
     display: block;
   }
@@ -72,7 +69,7 @@ export const Total = styled.div`
     font-weight: bold;
   }
 
-  strong {
+  b {
     font-size: 28px;
     margin-left: 5px;
   }

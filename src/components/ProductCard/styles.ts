@@ -15,7 +15,7 @@ export const Wrapper = styled.li`
       max-width: ${theme.spacings.xxlarge};
     }
 
-    > strong {
+    > b {
       font-size: ${theme.font.sizes.xmedium};
       line-height: 20px;
       color: #333;

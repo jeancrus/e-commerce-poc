@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { useProvider } from 'provider'
+import Image from 'next/image'
 import {
   MdAddCircleOutline,
   MdDelete,
@@ -53,10 +54,14 @@ const Cart: React.FC = () => {
           {cart?.map(product => (
             <tr key={product.id}>
               <td>
-                <img src={product.image} alt={product.name} />
+                <Image
+                  src={product.image as string}
+                  alt={product.name}
+                  layout="fill"
+                />
               </td>
               <td>
-                <strong>{product.name}</strong>
+                <b>{product.name}</b>
                 <span>{product.priceFormatted}</span>
               </td>
               <td>
@@ -106,7 +111,7 @@ const Cart: React.FC = () => {
         </Button>
         <S.Total>
           <span>TOTAL</span>
-          <strong>{total}</strong>
+          <b>{total}</b>
         </S.Total>
       </footer>
     </S.Container>

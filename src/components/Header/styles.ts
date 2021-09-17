@@ -1,10 +1,19 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 0;
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: ${theme.colors.darkBlack};
+    height: 100px;
+    padding: 0 20px;
+    z-index: ${theme.layers.alwaysOnTop};
+  `}
 `
 
 export const Cart = styled.a`

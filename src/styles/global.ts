@@ -40,6 +40,13 @@ const GlobalStyles = createGlobalStyle`
      button {
        cursor: pointer;
      }
+
+     #__next {
+       > div,
+       main {
+         margin-top: 150px;
+       }
+     }
    `}
 `
 

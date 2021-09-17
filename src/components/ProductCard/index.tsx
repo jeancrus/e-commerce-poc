@@ -22,7 +22,7 @@ const ProductCard: React.FC<IProductProps> = ({
       width={240}
       height={300}
     />
-    <strong>{product.name}</strong>
+    <b>{product.name}</b>
     <span>{product.priceFormatted}</span>
     <Button type="button" onClick={() => handleAddProduct(product)}>
       <div>
