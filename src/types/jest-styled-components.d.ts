@@ -5,7 +5,7 @@ declare global {
   namespace jest {
     interface AsymmetricMatcher {
       $$typeof: Symbol
-      sample?: string | RegExp | object | Array<any> | Function
+      sample?: string | RegExp | object | Array<unknow> | Function
     }
 
     type Value = string | number | RegExp | AsymmetricMatcher | undefined
@@ -16,7 +16,7 @@ declare global {
       supports?: string
     }
 
-    interface Matchers<R, T> {
+    interface Matchers<R> {
       toHaveStyleRule(property: string, value?: Value, options?: Options): R
     }
   }

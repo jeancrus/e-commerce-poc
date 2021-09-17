@@ -1,5 +1,5 @@
-import Main from 'components/Main'
+import Main from 'pages/Main'
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return <Main />
 }
